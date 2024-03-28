@@ -2,13 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from '../../firebase';
 import './home.scss';
-import logo from "../../img/logo.png";
 import stars from "../../img/stars.png";
-import vk from "../../img/VK.png";
-import github from "../../img/github.png";
 import mainPic from "../../img/MapPicture.png";
 import photoPic from "../../img/photoes.png";
-
+ 
  
 const Home = () => {
  
@@ -32,10 +29,7 @@ const Home = () => {
   return (
     <section>        
       <div class="masthead">
-        <header >
-            <a href="/"><img class="logo" src={logo} alt="MAP"></img></a>
-            <a class="btn btn-primary" href="auth">Войти</a>
-        </header>
+        
     <main>
         <div class="container row mainscreen">
             <img class="map-pic" src={mainPic} alt="MAP"></img>
@@ -122,17 +116,7 @@ const Home = () => {
         <div class="separaitor"></div>
 
     </main>
-    <footer>
-        <div class="container row">
-            <a href="/"><img class="logo" src={logo} alt="MAP"></img></a>
-            <div>
-                <a href="/"><img src={vk} alt="VK"></img></a>
-                <a href="/"><img src={github} alt="Github"></img></a>
-            </div>
-        </div>
-        
-        
-    </footer>
+    
 </div>
     </section>
   )
