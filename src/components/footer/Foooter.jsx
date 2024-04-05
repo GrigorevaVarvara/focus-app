@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
     <div class="container row">
         <a href="/"><img class="logo" src={logo} alt="MAP"></img></a>
-        <div>
+        <div class="menu row">
             <a href="/"><img src={vk} alt="VK"></img></a>
             <a href="/"><img src={github} alt="Github"></img></a>
         </div>

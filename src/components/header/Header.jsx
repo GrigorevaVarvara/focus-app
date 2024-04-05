@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../img/logo.png";
-import "./Header.scss";
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import "./Header.scss"; 
+import { onAuthStateChanged, signOut } from "firebase/auth"; 
 import { auth } from '../../firebase';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
 
@@ -26,11 +27,25 @@ const Header = () => {
           });
          
     }, [])
+
+    const navigate = useNavigate();
+ 
+    const handleLogout = () => {               
+        signOut(auth).then(() => {
+        // Sign-out successful.
+            navigate("/");
+            console.log("Signed out successfully")
+        }).catch((error) => {
+        // An error happened.
+        });
+    }
     
   return (
         <header >
             <a href="/"><img class="logo" src={logo} alt="MAP"></img></a>
             {!userLoggedIn && <a className="btn btn-primary" href="/login">Войти</a>}
+            {userLoggedIn &&<div class="row menu"><a href="lk"><button className="btn btn-primary">Личный кабинет</button></a>
+              <button className="btn btn-primary" onClick={handleLogout}>Выйти</button></div>}
         </header>
   )
 }

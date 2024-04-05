@@ -35,12 +35,12 @@ const Home = () => {
             <img class="map-pic" src={mainPic} alt="MAP"></img>
             <div class="column course">
                     <h1>Бесплатные онлайн курсы для изучения Python</h1>
-                    <a class="btn btn-primary btn-big" href="auth">Начать учиться</a>
+                    <a class="btn btn-primary btn-big" href="signup">Начать учиться</a>
             </div>
           </div>
        
 
-        <img class="separator" src={stars} alt="stars" />
+        <img class="container row separator" src={stars} alt="stars" />
 
         <div class="container row about">
             <img class="about-pic" src={photoPic} alt="MAP"/>
@@ -58,7 +58,7 @@ const Home = () => {
             </div>
           </div>
 
-        <img class="separator" src={stars} alt="stars"></img>
+        <img class="container row separator" src={stars} alt="stars"></img>
 
         <div class="container column">
             <h2>Как пользоваться?</h2>

@@ -37,18 +37,20 @@ a{
 .btn {
     font-weight: 700;
     text-transform: uppercase;
-    border: 0;
 
     color: #5446EB;
     background-color: #fff;
     border: none;
+    border-radius: 5px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     height: 50px;
-    width: 150px;
+    min-width: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .row{
@@ -57,6 +59,7 @@ a{
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+    width: 100%;
 }
 
 .column{
@@ -113,24 +116,28 @@ header{
     gap: 40px;
 }
 
+.about{
+    gap: 50px;
+}
+
 .about-pic{
     width: 50%;
 }
 
 .about-block{
-    width: 50%;
+    width: 70%;
     background-color: white;
     border-radius: 50px;
     color: #5446EB;
-    padding: 40px;
+    padding: 60px;
     font-size: 1.7em;
 }
 
 .separator{
     background-image: url(../../img/stars.png);
-    height: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin: 0 auto;
 }
 
 #slider {

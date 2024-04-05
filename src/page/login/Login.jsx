@@ -30,20 +30,13 @@ const Login = () => {
         
             <div>
 
-<header >
-    <a href="/home"><img class="logo" src="/storage/icons/logo.png" alt="MAP"></img></a>
-    <a class="btn btn-normal btn-primary" href="login">Войти</a>
-</header>
+<div class=" container row center">
 
-<div class=" container row justify-content-center">
-
-    <div class="col-lg-7">
-
-        <div class="card shadow-lg">
+        <div class="card">
             <div class="card-body">
                 
                 <div class="row">
-                    <div class="col-lg">
+                    
                         <div class="column">
                             <div class="text-center">
                                 <h2>Авторизация</h2>
@@ -78,14 +71,14 @@ const Login = () => {
                             <div>
                                 <button                                    
                                     onClick={onLogin}
-                                    class=" btn-normal btn-primary"                                        
+                                    class="btn"                                        
                                 >      
                                     Войти                                                                  
                                 </button>
                             </div>                               
                         </form>
                        
-                        <p className="text-center">
+                        <p class="white">
                             Нет, аккаунта?  {' '}
                             <NavLink to="/signup" class="link">
                             Зарегистрируйтесь, сейчас!
@@ -98,8 +91,6 @@ const Login = () => {
         </div>
 
     </div>
-    </div>
-</div>
         
     )
 }

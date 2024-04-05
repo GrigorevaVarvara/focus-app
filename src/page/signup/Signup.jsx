@@ -34,54 +34,59 @@ const Signup = () => {
   return (
     <main >        
         <section>
-            <div>
-                <div>                  
-                    <h1> FocusApp </h1>                                                                            
-                    <form>                                                                                            
-                        <div>
-                            <label htmlFor="email-address">
-                                Email address
-                            </label>
+            <div class=" container row center">
+                <div class="card">
+                <div class="card-body">
+                
+                <div class="row">
+                    
+                        <div class="column">                  
+                        <div class="text-center">
+                                <h2>Регистрация</h2>
+                            </div>                                                                          
+                    <form class="user column">                                                                                            
+                        <div class="form-group">
                             <input
                                 type="email"
                                 label="Email address"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}  
                                 required                                    
-                                placeholder="Email address"                                
+                                placeholder="Эл.почта"                                
                             />
                         </div>
 
                         <div>
-                            <label htmlFor="password">
-                                Password
-                            </label>
                             <input
                                 type="password"
                                 label="Create password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)} 
                                 required                                 
-                                placeholder="Password"              
+                                placeholder="Пароль"              
                             />
                         </div>                                             
                         
                         <button
                             type="submit" 
-                            onClick={onSubmit}                        
+                            onClick={onSubmit}
+                            class="btn"                         
                         >  
-                            Sign up                                
+                            Зарегистрироваться                                
                         </button>
                                                                      
                     </form>
                    
-                    <p>
-                        Already have an account?{' '}
+                    <p class="white">
+                        Уже есть аккаунт?{' '}
                         <NavLink to="/login" >
-                            Sign in
+                            Войти
                         </NavLink>
                     </p>                   
                 </div>
+            </div>
+            </div>
+            </div>
             </div>
         </section>
     </main>
