@@ -14,15 +14,6 @@ input{
 }
 
 
-.column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    gap: 20px;
-}
-
 
 .form-field{
     width: 277px;
@@ -35,7 +26,6 @@ input{
 
 @media (min-width: 992px) {
     .masthead {
-        height: 100vh!important;
         padding: 0;
     }
 

@@ -5,6 +5,7 @@ import './home.scss';
 import stars from "../../img/stars.png";
 import mainPic from "../../img/MapPicture.png";
 import photoPic from "../../img/photoes.png";
+import Slider from "../../components/widgets/slider/Slider";
  
  
 const Home = () => {
@@ -63,7 +64,8 @@ const Home = () => {
         <div class="container column">
             <h2>Как пользоваться?</h2>
 
-            <div id="slider">
+            <Slider />
+            {/* <div id="slider">
                 <input type="radio" name="slider" id="slide1" checked />
                 <input type="radio" name="slider" id="slide2" />
                 <input type="radio" name="slider" id="slide3" />
@@ -110,7 +112,7 @@ const Home = () => {
                     <label for="slide3"></label>
                     <label for="slide4"></label>
                 </div>
-            </div>
+            </div> */}
         </div>
 
         <div class="separaitor"></div>
