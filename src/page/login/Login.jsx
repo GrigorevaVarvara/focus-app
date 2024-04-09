@@ -37,13 +37,13 @@ const Login = () => {
                 
                 <div class="row">
                     
-                        <div class="column">
+                        <div class="column column_center">
                             <div class="text-center">
                                 <h2>Авторизация</h2>
                             </div>
 
 
-                            <form class="user column">                                              
+                            <form class="user column column_center">                                              
                             <div class="form-group">
                                 <input
                                     id="email-address"

@@ -76,6 +76,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
   }, [items.length, slide]); // when images uploaded or slide changed manually we start timer
 
   return (
+    <div className="container">
     <div
       style={{ width, height }}
       className="slider"
@@ -95,7 +96,7 @@ const Slider = function ({ width, height, autoPlay, autoPlayTime }) {
         <SlidesList />
         <Dots />
       </SliderContext.Provider>
-    </div>
+    </div></div>
   );
 };
 
