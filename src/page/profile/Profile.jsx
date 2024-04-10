@@ -8,11 +8,9 @@ const Profile = () => {
     return (
         <div className="container card">
             <section className="">
-                   <div className="column">
-                      <div className="row">
+                   <div className="column profile">
                          <img src={profilePhoto}></img>
-                         <h2>Привет, Пользователь!</h2>
-                      </div>
+                         <h3>Привет, Пользователь!</h3>
                       <a className='btn'>Редактировать профиль</a>
                       <h2>Твои курсы:</h2>
                       
