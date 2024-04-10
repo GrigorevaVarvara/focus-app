@@ -6,6 +6,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import {Routes, Route} from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Foooter';
+import Profile from './page/profile/Profile';
  
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<Home/>}/>
               <Route path="/signup" element={<Signup/>}/>
               <Route path="/login" element={<Login/>}/>
+              <Route path="/lk" element={<Profile/>}/>
             </Routes> 
             <Footer/>                   
         </section>
