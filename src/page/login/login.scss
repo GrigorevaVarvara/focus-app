@@ -34,13 +34,24 @@
 
 
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .masthead {
         padding: 0;
     }
 
     .card{
-        padding: 50px;
+        padding: 30px;
+    }
+
+    .btn-big{
+        width: 100%;
+        height: 50px;
+        font-size: 1em;
+
+    }
+
+    .form-field{
+        width: 180px;
     }
 }
-
+ 
