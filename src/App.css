@@ -50,5 +50,24 @@ a{
 @media only screen and (max-width: 768px) {
     body {
         font-size: 12px; /* Adjust font size for better readability */
+        min-height: 100vh;
+    }
+
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    Routes {
+        height: calc(100vh - (headerHeight + footerHeight)); /* Высота равна 100% высоты видимой области за вычетом высоты заголовка и подвала */
+        overflow-y: auto; /* Добавление вертикальной прокрутки при необходимости */
     }
 }
