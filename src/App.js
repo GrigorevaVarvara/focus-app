@@ -7,9 +7,12 @@ import {Routes, Route} from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Foooter';
 import Profile from './page/profile/Profile';
+import Store from './page/store/store';
+import CoursePage from './page/coursepage/coursepage';
  
 function App() {
  
+  
   return (
     <Router>
       <div>
@@ -20,6 +23,8 @@ function App() {
               <Route path="/signup" element={<Signup/>}/>
               <Route path="/login" element={<Login/>}/>
               <Route path="/lk" element={<Profile/>}/>
+              <Route path="/store" element={<Store/>}/>
+              <Route path="/courses/:id" component={CoursePage} />
             </Routes> 
             <Footer/>                   
         </section>

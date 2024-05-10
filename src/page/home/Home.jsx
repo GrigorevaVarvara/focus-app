@@ -32,7 +32,7 @@ const Home = () => {
             <img className="map-pic" src={mainPic} alt="MAP" />
             <div className="column course">
               <h1>Бесплатные онлайн курсы для изучения Python</h1>
-              <a className="btn btn-primary btn-big" href="signup">Начать учиться</a>
+              <a className="btn btn-primary btn-big" href="store">Начать учиться</a>
             </div>
           </div>
 

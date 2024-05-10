@@ -2,8 +2,8 @@ import Card from '../card/card';
 import './cardlist.scss'
 
 function Cardlist({cards}) {
-    return <div className="card-list">
-        <div className="container">
+    return <div className="card-list container">
+        <div className="list">
             {
                 cards.map((card)=>{
                 return <Card img={card.img}
