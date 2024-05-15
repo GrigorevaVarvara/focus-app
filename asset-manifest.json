@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/focus-app/static/css/main.f42f38a6.css",
+    "main.js": "/focus-app/static/js/main.b3d8a600.js",
+    "static/js/453.bbbb034e.chunk.js": "/focus-app/static/js/453.bbbb034e.chunk.js",
+    "static/media/photoes.png": "/focus-app/static/media/photoes.701c7d7ee8d6bcbbd2dc.png",
+    "static/media/MapPicture.png": "/focus-app/static/media/MapPicture.6c093de9321ac2a834a8.png",
+    "static/media/profilePhoto.png": "/focus-app/static/media/profilePhoto.4247ff181888a26d9bd9.png",
+    "index.html": "/focus-app/index.html",
+    "main.f42f38a6.css.map": "/focus-app/static/css/main.f42f38a6.css.map",
+    "main.b3d8a600.js.map": "/focus-app/static/js/main.b3d8a600.js.map",
+    "453.bbbb034e.chunk.js.map": "/focus-app/static/js/453.bbbb034e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f42f38a6.css",
+    "static/js/main.b3d8a600.js"
+  ]
+}
